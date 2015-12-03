@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844C73801C0F729B000096A9 /* CidadesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C737F1C0F729B000096A9 /* CidadesTableViewController.swift */; };
+		844C73821C0F73AE000096A9 /* Cidade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C73811C0F73AE000096A9 /* Cidade.swift */; };
+		844C73861C0F77BC000096A9 /* CidadeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C73851C0F77BC000096A9 /* CidadeTableViewCell.swift */; };
+		845AA8561C0F265E00942FB4 /* cidades_transparente-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 845AA8551C0F265E00942FB4 /* cidades_transparente-02.png */; };
+		845AA8581C0F2A4100942FB4 /* logo_cidades.png in Resources */ = {isa = PBXBuildFile; fileRef = 845AA8571C0F2A4100942FB4 /* logo_cidades.png */; };
+		845AA85E1C0F2C8300942FB4 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AA85D1C0F2C8300942FB4 /* DetalhesViewController.swift */; };
+		845AA8601C0F2CFE00942FB4 /* APICidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AA85F1C0F2CFE00942FB4 /* APICidades.swift */; };
+		845AA86E1C0F3E8900942FB4 /* aracaju.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA8671C0F3E8800942FB4 /* aracaju.jpg */; };
+		845AA86F1C0F3E8900942FB4 /* caninde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA8681C0F3E8800942FB4 /* caninde.jpg */; };
+		845AA8701C0F3E8900942FB4 /* estancia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA8691C0F3E8800942FB4 /* estancia.jpg */; };
+		845AA8711C0F3E8900942FB4 /* itabaiana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA86A1C0F3E8800942FB4 /* itabaiana.jpg */; };
+		845AA8721C0F3E8900942FB4 /* laranjeiras.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA86B1C0F3E8800942FB4 /* laranjeiras.jpg */; };
+		845AA8731C0F3E8900942FB4 /* propria.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA86C1C0F3E8800942FB4 /* propria.jpg */; };
+		845AA8741C0F3E8900942FB4 /* sao-cristovao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA86D1C0F3E8800942FB4 /* sao-cristovao.jpg */; };
+		84979CEA1C1086D200B38BC8 /* cocogoose.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84979CE91C1086D200B38BC8 /* cocogoose.otf */; };
+		84CB17441C0E314200014AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB17431C0E314200014AB6 /* AppDelegate.swift */; };
+		84CB17491C0E314200014AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CB17471C0E314200014AB6 /* Main.storyboard */; };
+		84CB174B1C0E314200014AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CB174A1C0E314200014AB6 /* Assets.xcassets */; };
+		84CB174E1C0E314200014AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CB174C1C0E314200014AB6 /* LaunchScreen.storyboard */; };
+		84CB17591C0E314300014AB6 /* CidadesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB17581C0E314300014AB6 /* CidadesTests.swift */; };
+		84CB17641C0E314300014AB6 /* CidadesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB17631C0E314300014AB6 /* CidadesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CB17551C0E314300014AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CB17381C0E314200014AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CB173F1C0E314200014AB6;
+			remoteInfo = Cidades;
+		};
+		84CB17601C0E314300014AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CB17381C0E314200014AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CB173F1C0E314200014AB6;
+			remoteInfo = Cidades;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844C737F1C0F729B000096A9 /* CidadesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CidadesTableViewController.swift; sourceTree = "<group>"; };
+		844C73811C0F73AE000096A9 /* Cidade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cidade.swift; sourceTree = "<group>"; };
+		844C73851C0F77BC000096A9 /* CidadeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CidadeTableViewCell.swift; sourceTree = "<group>"; };
+		845AA8551C0F265E00942FB4 /* cidades_transparente-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cidades_transparente-02.png"; sourceTree = "<group>"; };
+		845AA8571C0F2A4100942FB4 /* logo_cidades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_cidades.png; sourceTree = "<group>"; };
+		845AA85D1C0F2C8300942FB4 /* DetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
+		845AA85F1C0F2CFE00942FB4 /* APICidades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICidades.swift; sourceTree = "<group>"; };
+		845AA8671C0F3E8800942FB4 /* aracaju.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aracaju.jpg; sourceTree = "<group>"; };
+		845AA8681C0F3E8800942FB4 /* caninde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caninde.jpg; sourceTree = "<group>"; };
+		845AA8691C0F3E8800942FB4 /* estancia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = estancia.jpg; sourceTree = "<group>"; };
+		845AA86A1C0F3E8800942FB4 /* itabaiana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = itabaiana.jpg; sourceTree = "<group>"; };
+		845AA86B1C0F3E8800942FB4 /* laranjeiras.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laranjeiras.jpg; sourceTree = "<group>"; };
+		845AA86C1C0F3E8800942FB4 /* propria.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = propria.jpg; sourceTree = "<group>"; };
+		845AA86D1C0F3E8800942FB4 /* sao-cristovao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sao-cristovao.jpg"; sourceTree = "<group>"; };
+		84979CE91C1086D200B38BC8 /* cocogoose.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cocogoose.otf; sourceTree = "<group>"; };
+		84CB17401C0E314200014AB6 /* Cidades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cidades.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CB17431C0E314200014AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84CB17481C0E314200014AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84CB174A1C0E314200014AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CB174D1C0E314200014AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84CB174F1C0E314300014AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CB17541C0E314300014AB6 /* CidadesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CidadesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CB17581C0E314300014AB6 /* CidadesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CidadesTests.swift; sourceTree = "<group>"; };
+		84CB175A1C0E314300014AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CB175F1C0E314300014AB6 /* CidadesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CidadesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CB17631C0E314300014AB6 /* CidadesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CidadesUITests.swift; sourceTree = "<group>"; };
+		84CB17651C0E314300014AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CB173D1C0E314200014AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB17511C0E314300014AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB175C1C0E314300014AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844C73831C0F755D000096A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				845AA85F1C0F2CFE00942FB4 /* APICidades.swift */,
+				844C73811C0F73AE000096A9 /* Cidade.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		844C73841C0F7564000096A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				844C737F1C0F729B000096A9 /* CidadesTableViewController.swift */,
+				844C73851C0F77BC000096A9 /* CidadeTableViewCell.swift */,
+				845AA85D1C0F2C8300942FB4 /* DetalhesViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		845AA8541C0F264B00942FB4 /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				845AA8671C0F3E8800942FB4 /* aracaju.jpg */,
+				845AA8681C0F3E8800942FB4 /* caninde.jpg */,
+				845AA8691C0F3E8800942FB4 /* estancia.jpg */,
+				845AA86A1C0F3E8800942FB4 /* itabaiana.jpg */,
+				845AA86B1C0F3E8800942FB4 /* laranjeiras.jpg */,
+				845AA86C1C0F3E8800942FB4 /* propria.jpg */,
+				845AA86D1C0F3E8800942FB4 /* sao-cristovao.jpg */,
+				845AA8571C0F2A4100942FB4 /* logo_cidades.png */,
+				845AA8551C0F265E00942FB4 /* cidades_transparente-02.png */,
+			);
+			name = Imagens;
+			sourceTree = "<group>";
+		};
+		84CB17371C0E314200014AB6 = {
+			isa = PBXGroup;
+			children = (
+				84CB17421C0E314200014AB6 /* Cidades */,
+				84CB17571C0E314300014AB6 /* CidadesTests */,
+				84CB17621C0E314300014AB6 /* CidadesUITests */,
+				84CB17411C0E314200014AB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84CB17411C0E314200014AB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CB17401C0E314200014AB6 /* Cidades.app */,
+				84CB17541C0E314300014AB6 /* CidadesTests.xctest */,
+				84CB175F1C0E314300014AB6 /* CidadesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CB17421C0E314200014AB6 /* Cidades */ = {
+			isa = PBXGroup;
+			children = (
+				84979CE91C1086D200B38BC8 /* cocogoose.otf */,
+				84CB17431C0E314200014AB6 /* AppDelegate.swift */,
+				844C73841C0F7564000096A9 /* ViewController */,
+				844C73831C0F755D000096A9 /* Model */,
+				845AA8541C0F264B00942FB4 /* Imagens */,
+				84CB17471C0E314200014AB6 /* Main.storyboard */,
+				84CB174A1C0E314200014AB6 /* Assets.xcassets */,
+				84CB174C1C0E314200014AB6 /* LaunchScreen.storyboard */,
+				84CB174F1C0E314300014AB6 /* Info.plist */,
+			);
+			path = Cidades;
+			sourceTree = "<group>";
+		};
+		84CB17571C0E314300014AB6 /* CidadesTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CB17581C0E314300014AB6 /* CidadesTests.swift */,
+				84CB175A1C0E314300014AB6 /* Info.plist */,
+			);
+			path = CidadesTests;
+			sourceTree = "<group>";
+		};
+		84CB17621C0E314300014AB6 /* CidadesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84CB17631C0E314300014AB6 /* CidadesUITests.swift */,
+				84CB17651C0E314300014AB6 /* Info.plist */,
+			);
+			path = CidadesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CB173F1C0E314200014AB6 /* Cidades */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CB17681C0E314300014AB6 /* Build configuration list for PBXNativeTarget "Cidades" */;
+			buildPhases = (
+				84CB173C1C0E314200014AB6 /* Sources */,
+				84CB173D1C0E314200014AB6 /* Frameworks */,
+				84CB173E1C0E314200014AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cidades;
+			productName = Cidades;
+			productReference = 84CB17401C0E314200014AB6 /* Cidades.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CB17531C0E314300014AB6 /* CidadesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CB176B1C0E314300014AB6 /* Build configuration list for PBXNativeTarget "CidadesTests" */;
+			buildPhases = (
+				84CB17501C0E314300014AB6 /* Sources */,
+				84CB17511C0E314300014AB6 /* Frameworks */,
+				84CB17521C0E314300014AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CB17561C0E314300014AB6 /* PBXTargetDependency */,
+			);
+			name = CidadesTests;
+			productName = CidadesTests;
+			productReference = 84CB17541C0E314300014AB6 /* CidadesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84CB175E1C0E314300014AB6 /* CidadesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CB176E1C0E314300014AB6 /* Build configuration list for PBXNativeTarget "CidadesUITests" */;
+			buildPhases = (
+				84CB175B1C0E314300014AB6 /* Sources */,
+				84CB175C1C0E314300014AB6 /* Frameworks */,
+				84CB175D1C0E314300014AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CB17611C0E314300014AB6 /* PBXTargetDependency */,
+			);
+			name = CidadesUITests;
+			productName = CidadesUITests;
+			productReference = 84CB175F1C0E314300014AB6 /* CidadesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CB17381C0E314200014AB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Getinfo;
+				TargetAttributes = {
+					84CB173F1C0E314200014AB6 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					84CB17531C0E314300014AB6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 84CB173F1C0E314200014AB6;
+					};
+					84CB175E1C0E314300014AB6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 84CB173F1C0E314200014AB6;
+					};
+				};
+			};
+			buildConfigurationList = 84CB173B1C0E314200014AB6 /* Build configuration list for PBXProject "Cidades" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CB17371C0E314200014AB6;
+			productRefGroup = 84CB17411C0E314200014AB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CB173F1C0E314200014AB6 /* Cidades */,
+				84CB17531C0E314300014AB6 /* CidadesTests */,
+				84CB175E1C0E314300014AB6 /* CidadesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CB173E1C0E314200014AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84979CEA1C1086D200B38BC8 /* cocogoose.otf in Resources */,
+				845AA8561C0F265E00942FB4 /* cidades_transparente-02.png in Resources */,
+				845AA86F1C0F3E8900942FB4 /* caninde.jpg in Resources */,
+				84CB174E1C0E314200014AB6 /* LaunchScreen.storyboard in Resources */,
+				845AA8701C0F3E8900942FB4 /* estancia.jpg in Resources */,
+				84CB174B1C0E314200014AB6 /* Assets.xcassets in Resources */,
+				845AA8731C0F3E8900942FB4 /* propria.jpg in Resources */,
+				845AA8741C0F3E8900942FB4 /* sao-cristovao.jpg in Resources */,
+				845AA8581C0F2A4100942FB4 /* logo_cidades.png in Resources */,
+				84CB17491C0E314200014AB6 /* Main.storyboard in Resources */,
+				845AA8711C0F3E8900942FB4 /* itabaiana.jpg in Resources */,
+				845AA8721C0F3E8900942FB4 /* laranjeiras.jpg in Resources */,
+				845AA86E1C0F3E8900942FB4 /* aracaju.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB17521C0E314300014AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB175D1C0E314300014AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CB173C1C0E314200014AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844C73861C0F77BC000096A9 /* CidadeTableViewCell.swift in Sources */,
+				84CB17441C0E314200014AB6 /* AppDelegate.swift in Sources */,
+				845AA8601C0F2CFE00942FB4 /* APICidades.swift in Sources */,
+				844C73821C0F73AE000096A9 /* Cidade.swift in Sources */,
+				844C73801C0F729B000096A9 /* CidadesTableViewController.swift in Sources */,
+				845AA85E1C0F2C8300942FB4 /* DetalhesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB17501C0E314300014AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB17591C0E314300014AB6 /* CidadesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB175B1C0E314300014AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB17641C0E314300014AB6 /* CidadesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CB17561C0E314300014AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CB173F1C0E314200014AB6 /* Cidades */;
+			targetProxy = 84CB17551C0E314300014AB6 /* PBXContainerItemProxy */;
+		};
+		84CB17611C0E314300014AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CB173F1C0E314200014AB6 /* Cidades */;
+			targetProxy = 84CB17601C0E314300014AB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84CB17471C0E314200014AB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CB17481C0E314200014AB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84CB174C1C0E314200014AB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CB174D1C0E314200014AB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CB17661C0E314300014AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84CB17671C0E314300014AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CB17691C0E314300014AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cidades/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.Cidades;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84CB176A1C0E314300014AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cidades/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.Cidades;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84CB176C1C0E314300014AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CidadesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.CidadesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cidades.app/Cidades";
+			};
+			name = Debug;
+		};
+		84CB176D1C0E314300014AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CidadesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.CidadesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cidades.app/Cidades";
+			};
+			name = Release;
+		};
+		84CB176F1C0E314300014AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CidadesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.CidadesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cidades;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		84CB17701C0E314300014AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CidadesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.CidadesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cidades;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CB173B1C0E314200014AB6 /* Build configuration list for PBXProject "Cidades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CB17661C0E314300014AB6 /* Debug */,
+				84CB17671C0E314300014AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CB17681C0E314300014AB6 /* Build configuration list for PBXNativeTarget "Cidades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CB17691C0E314300014AB6 /* Debug */,
+				84CB176A1C0E314300014AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CB176B1C0E314300014AB6 /* Build configuration list for PBXNativeTarget "CidadesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CB176C1C0E314300014AB6 /* Debug */,
+				84CB176D1C0E314300014AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CB176E1C0E314300014AB6 /* Build configuration list for PBXNativeTarget "CidadesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CB176F1C0E314300014AB6 /* Debug */,
+				84CB17701C0E314300014AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CB17381C0E314200014AB6 /* Project object */;
+}
