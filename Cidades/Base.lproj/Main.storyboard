@@ -9,17 +9,18 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CidadesTableViewController" customModule="Cidades" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="173" sectionHeaderHeight="28" sectionFooterHeight="28" id="IaX-Gt-c6B">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="190" sectionHeaderHeight="28" sectionFooterHeight="28" id="IaX-Gt-c6B">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="173" id="ubk-dE-Dua" customClass="CidadeTableViewCell" customModule="Cidades" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="173"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="190" id="ubk-dE-Dua" customClass="CidadeTableViewCell" customModule="Cidades" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="190"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ubk-dE-Dua" id="0LQ-4m-R2C">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="172"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="189"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sao-cristovao.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-2y-JKb">
@@ -37,9 +38,11 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="São Cristovão" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-d9-BmL">
                                             <rect key="frame" x="225" y="130" width="151" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
                                         </label>
                                     </subviews>
                                     <animations/>
@@ -49,13 +52,22 @@
                                         <constraint firstAttribute="bottom" secondItem="MGd-d9-BmL" secondAttribute="bottom" constant="10" id="HUa-wO-mLa"/>
                                         <constraint firstItem="gPc-2y-JKb" firstAttribute="leading" secondItem="0LQ-4m-R2C" secondAttribute="leading" id="JZx-da-t4M"/>
                                         <constraint firstItem="MGd-d9-BmL" firstAttribute="centerX" secondItem="0LQ-4m-R2C" secondAttribute="centerX" id="Ydn-bD-6fg"/>
+                                        <constraint firstItem="MGd-d9-BmL" firstAttribute="centerY" secondItem="0LQ-4m-R2C" secondAttribute="centerY" id="e0j-Yw-N4N"/>
                                         <constraint firstAttribute="bottom" secondItem="gPc-2y-JKb" secondAttribute="bottom" constant="20" id="utP-Wl-2qm"/>
+                                        <constraint firstAttribute="bottom" secondItem="MGd-d9-BmL" secondAttribute="bottom" constant="20" id="zgG-X3-SWh"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="HUa-wO-mLa"/>
+                                            <exclude reference="e0j-Yw-N4N"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
                                     <outlet property="imagem" destination="gPc-2y-JKb" id="YO2-3R-83u"/>
                                     <outlet property="nome" destination="MGd-d9-BmL" id="4Hx-RV-FcQ"/>
+                                    <segue destination="bH5-pr-976" kind="show" identifier="cidadeDetalheSegue" id="WvD-zD-aun"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,6 +81,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1138" y="430"/>
+        </scene>
+        <!--Detalhes View Controller-->
+        <scene sceneID="0RP-On-PrH">
+            <objects>
+                <viewController id="bH5-pr-976" customClass="DetalhesViewController" customModule="Cidades" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vXk-9u-vJh"/>
+                        <viewControllerLayoutGuide type="bottom" id="TkQ-3m-QO8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6nU-Y2-TD3">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wlh-e3-jyu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Jpm-Wg-wYI"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjd-Cn-eul">
+                                <rect key="frame" x="20" y="272" width="560" height="264"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fjd-Cn-eul" firstAttribute="leading" secondItem="6nU-Y2-TD3" secondAttribute="leading" constant="10" id="Gol-KU-8Q1"/>
+                            <constraint firstItem="TkQ-3m-QO8" firstAttribute="top" secondItem="fjd-Cn-eul" secondAttribute="bottom" id="XJh-Wx-4en"/>
+                            <constraint firstAttribute="trailing" secondItem="fjd-Cn-eul" secondAttribute="trailing" constant="10" id="aAL-QD-KPt"/>
+                            <constraint firstItem="Wlh-e3-jyu" firstAttribute="leading" secondItem="6nU-Y2-TD3" secondAttribute="leading" id="bSn-jt-w9h"/>
+                            <constraint firstItem="Wlh-e3-jyu" firstAttribute="top" secondItem="vXk-9u-vJh" secondAttribute="bottom" id="blj-px-4yh"/>
+                            <constraint firstAttribute="trailing" secondItem="Wlh-e3-jyu" secondAttribute="trailing" id="qVR-2q-Uun"/>
+                            <constraint firstItem="fjd-Cn-eul" firstAttribute="top" secondItem="Wlh-e3-jyu" secondAttribute="bottom" constant="10" id="ymF-FA-y1i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descricao" destination="fjd-Cn-eul" id="Ztx-rA-SnB"/>
+                        <outlet property="imagem" destination="Wlh-e3-jyu" id="rUn-hp-efG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEM-wW-cSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="430"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BzG-F8-oky">

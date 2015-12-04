@@ -21,6 +21,7 @@
 		845AA8721C0F3E8900942FB4 /* laranjeiras.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA86B1C0F3E8800942FB4 /* laranjeiras.jpg */; };
 		845AA8731C0F3E8900942FB4 /* propria.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA86C1C0F3E8800942FB4 /* propria.jpg */; };
 		845AA8741C0F3E8900942FB4 /* sao-cristovao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845AA86D1C0F3E8800942FB4 /* sao-cristovao.jpg */; };
+		8485F2F41C11CBDB001CCCE9 /* icone_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8485F2F31C11CBDB001CCCE9 /* icone_01@2x.png */; };
 		84979CEA1C1086D200B38BC8 /* cocogoose.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84979CE91C1086D200B38BC8 /* cocogoose.otf */; };
 		84CB17441C0E314200014AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB17431C0E314200014AB6 /* AppDelegate.swift */; };
 		84CB17491C0E314200014AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CB17471C0E314200014AB6 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		845AA86B1C0F3E8800942FB4 /* laranjeiras.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laranjeiras.jpg; sourceTree = "<group>"; };
 		845AA86C1C0F3E8800942FB4 /* propria.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = propria.jpg; sourceTree = "<group>"; };
 		845AA86D1C0F3E8800942FB4 /* sao-cristovao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sao-cristovao.jpg"; sourceTree = "<group>"; };
+		8485F2F31C11CBDB001CCCE9 /* icone_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone_01@2x.png"; sourceTree = "<group>"; };
 		84979CE91C1086D200B38BC8 /* cocogoose.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cocogoose.otf; sourceTree = "<group>"; };
 		84CB17401C0E314200014AB6 /* Cidades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cidades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB17431C0E314200014AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		845AA8541C0F264B00942FB4 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				8485F2F31C11CBDB001CCCE9 /* icone_01@2x.png */,
 				845AA8671C0F3E8800942FB4 /* aracaju.jpg */,
 				845AA8681C0F3E8800942FB4 /* caninde.jpg */,
 				845AA8691C0F3E8800942FB4 /* estancia.jpg */,
@@ -299,6 +302,7 @@
 				845AA8561C0F265E00942FB4 /* cidades_transparente-02.png in Resources */,
 				845AA86F1C0F3E8900942FB4 /* caninde.jpg in Resources */,
 				84CB174E1C0E314200014AB6 /* LaunchScreen.storyboard in Resources */,
+				8485F2F41C11CBDB001CCCE9 /* icone_01@2x.png in Resources */,
 				845AA8701C0F3E8900942FB4 /* estancia.jpg in Resources */,
 				84CB174B1C0E314200014AB6 /* Assets.xcassets in Resources */,
 				845AA8731C0F3E8900942FB4 /* propria.jpg in Resources */,

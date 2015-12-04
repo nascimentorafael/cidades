@@ -22,22 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Muda fonte e cor da nav bar
         if let font = UIFont(name: "COCOGOOSE", size: 20) {
-            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: font]
+            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 247/255.0, green: 184/255.0, blue: 9/255.0, alpha: 1), NSFontAttributeName: font]
         }
-        
-        //self.printFonts()
         
         return true
-    }
-    
-    func printFonts() {
-        let fontFamilyNames = UIFont.familyNames()
-        for familyName in fontFamilyNames {
-            print("------------------------------")
-            print("Font Family Name = [\(familyName)]")
-            let names = UIFont.fontNamesForFamilyName(familyName)
-            print("Font Names = [\(names)]")
-        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

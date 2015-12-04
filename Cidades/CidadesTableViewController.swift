@@ -17,12 +17,12 @@ class CidadesTableViewController: UITableViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // Modifica o icone de voltar
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "icone_01@2x.png")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "icone_01@2x.png")
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 247/255.0, green: 184/255.0, blue: 9/255.0, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +54,26 @@ class CidadesTableViewController: UITableViewController{
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let row = indexPath.row
+        print(cidades[row].nome)
+    }
+    
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "cidadeDetalheSegue" {
+            if let destination = segue.destinationViewController as? DetalhesViewController {
+                if let indexCidades = tableView.indexPathForSelectedRow?.row{
+                    destination.cidade = cidades[indexCidades] 
+                }
+            }
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,16 +107,6 @@ class CidadesTableViewController: UITableViewController{
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
     */
 
