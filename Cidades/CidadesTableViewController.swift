@@ -56,14 +56,14 @@ class CidadesTableViewController: UITableViewController{
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
-        //performSegueWithIdentifier("cidadeDetalheSegue", sender: self)
-        
-        //let row = indexPath.row
-        //print(cidades[row].nome)
-    }
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+//        
+//        performSegueWithIdentifier("cidadeDetalheSegue", sender: self)
+//        
+//        let row = indexPath.row
+//        print(cidades[row].nome)
+//    }
     
     
     // MARK: - Navigation
