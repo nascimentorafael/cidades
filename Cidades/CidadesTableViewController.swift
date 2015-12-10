@@ -18,6 +18,8 @@ class CidadesTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "cidades"
+        
         // Modifica o icone de voltar
         self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "icone_01@2x.png")
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "icone_01@2x.png")
@@ -55,10 +57,12 @@ class CidadesTableViewController: UITableViewController{
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        //tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        let row = indexPath.row
-        print(cidades[row].nome)
+        //performSegueWithIdentifier("cidadeDetalheSegue", sender: self)
+        
+        //let row = indexPath.row
+        //print(cidades[row].nome)
     }
     
     
